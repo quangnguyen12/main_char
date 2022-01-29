@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Run();
-        flipsprite();
+        Flipsprite();
     }
     public void Run()
     {
@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         bool playerhorizontalspeed = Mathf.Abs(myrig.velocity.x) > Mathf.Epsilon;
         myani.SetBool("walking", playerhorizontalspeed);
     }
-    public void flipsprite()
+    public void Flipsprite()
     {
         bool playerhorizontalspeed = Mathf.Abs(myrig.velocity.x) > Mathf.Epsilon;
         if (playerhorizontalspeed)
