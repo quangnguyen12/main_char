@@ -6,6 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {   //config
     public float walkspeed = 5f;
+    public float jumpspeed = 5f;
     Rigidbody2D myrig;
     Animator myani;
     //state
@@ -23,6 +24,14 @@ public class Movement : MonoBehaviour
     {
         Run();
         Flipsprite();
+        Jump();
+    }
+    public void Jump()
+    {
+        if (Input.GetButtonDown("Jump")){
+            Vector2 jumpveclocitytoadd = new Vector2(0f, jumpspeed);
+            myrig.velocity += jumpveclocitytoadd;
+        }
     }
     public void Run()
     {
