@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//LAD dep trai qua ahhihi
+
 
 public class Movement : MonoBehaviour
 {   //config
