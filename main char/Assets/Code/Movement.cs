@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//df
+
 public class Movement : MonoBehaviour
 {   //config
     public float walkspeed = 5f;
