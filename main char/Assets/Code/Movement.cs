@@ -26,14 +26,14 @@ public class Movement : MonoBehaviour
         Flipsprite();
         Jump();
     }
-    public void Jump()
+    public void Jump()//create a jump function 
     {
         if (Input.GetButtonDown("Jump")){
             Vector2 jumpveclocitytoadd = new Vector2(0f, jumpspeed);
             myrig.velocity += jumpveclocitytoadd;
         }
     }
-    public void Run()
+    public void Run()//create a run  function 
     {
         float controlThrow = Input.GetAxis("Horizontal");
         Vector2 playervelocity = new Vector2(controlThrow*walkspeed,myrig.velocity.y);
