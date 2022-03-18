@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - player
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - background
   - foreground
-  - 
-  - 
+  - enemies
+  - player
   - 
   - 
   - 
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: foreground
     uniqueID: 1855812649
+    locked: 0
+  - name: enemies
+    uniqueID: 3376844923
     locked: 0
